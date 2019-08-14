@@ -1,0 +1,14 @@
+.editorconfig
+.git
+.gitignore
+.npmignore
+.prettierrc
+.travis.yml
+README.md
+coverage
+jest.config.js
+node_modules
+src
+tsconfig.json
+tslint.json
+yarn-error.log
