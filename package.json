@@ -10,7 +10,8 @@
     "prebuild": "rimraf dist",
     "test": "jest",
     "test:ci": "jest --coverage",
-    "posttest:ci": "cat coverage/lcov.info | coveralls"
+    "posttest:ci": "cat coverage/lcov.info | coveralls",
+    "prepublishOnly": "yarn build"
   },
   "dependencies": {
     "ajv": "^6.10.2",
