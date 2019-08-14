@@ -1,0 +1,48 @@
+{
+  "name": "fastify-pagination",
+  "version": "0.1.0",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "author": "Francis Brito <fr.br94@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "build": "tsc",
+    "prebuild": "rimraf dist",
+    "test": "jest",
+    "test:ci": "jest --coverage",
+    "posttest:ci": "cat coverage/lcov.info | coveralls"
+  },
+  "dependencies": {
+    "ajv": "^6.10.2",
+    "fastify": "^2.7.1",
+    "fastify-plugin": "^1.6.0",
+    "fluent-schema": "^0.7.3"
+  },
+  "devDependencies": {
+    "@types/jest": "^24.0.17",
+    "@types/node": "^12.7.1",
+    "fastify-cli": "^1.1.0",
+    "husky": "^3.0.3",
+    "jest": "^24.8.0",
+    "lint-staged": "^9.2.1",
+    "prettier": "^1.18.2",
+    "prettier-tslint": "^0.4.2",
+    "rimraf": "^2.7.0",
+    "ts-jest": "^24.0.2",
+    "tslint": "^5.18.0",
+    "tslint-plugin-prettier": "^2.0.1",
+    "typescript": "^3.5.3"
+  },
+  "lint-staged": {
+    "*.ts": [
+      "prettier-tslint fix",
+      "git add"
+    ]
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged",
+      "pre-push": "yarn test"
+    }
+  }
+}
