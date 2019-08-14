@@ -1,4 +1,6 @@
 # fastify-pagination
+[![Build Status](https://img.shields.io/travis/francisbrito/fastify-pagination/master.svg?style=flat-square)](https://travis-ci.org/francisbrito/fastify-pagination) [![Coverage Status](https://img.shields.io/coveralls/github/francisbrito/fastify-pagination/master.svg?style=flat-square)](https://coveralls.io/github/francisbrito/fastify-pagination?branch=master)
+
 Response pagination for Fastify. Inspired by [`Django Rest Framework`](https://www.django-rest-framework.org/api-guide/pagination/)
 
 ## Install
