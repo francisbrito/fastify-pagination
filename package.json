@@ -45,5 +45,11 @@
       "pre-commit": "lint-staged",
       "pre-push": "yarn test"
     }
-  }
+  },
+  "description": "Response pagination for Fastify.",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/francisbrito/fastify-pagination.git"
+  },
+  "keywords": ["fastify", "pagination", "response"]
 }
